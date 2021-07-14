@@ -9,3 +9,6 @@ def summarize():
         return jsonify(request.json)
     else:
         return "Wrong HTTP method", 405
+
+if (__name__=="__main__"):
+    app.run(debug=True)
